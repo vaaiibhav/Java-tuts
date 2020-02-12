@@ -1,26 +1,33 @@
 import javax.swing.*;
 
 public class checkboxes{
-    public static void main() {
+
+
+    public static void main(String args[]) {
         JFrame frame; 
          // creating instance of JFrame with name "first way" 
         frame=new JFrame("first way"); 
+        
         JLabel Jl = new JLabel("Attendence"); 
   
         JCheckBox chb1 = new JCheckBox("Aanand");
         JCheckBox chb2 = new JCheckBox("Rohini");
         JCheckBox chb3 = new JCheckBox("Satyajeet");
         JCheckBox chb4 = new JCheckBox("Saurabh");
-         
+            chb1.setBounds(15,15,150,60);
+            chb2.setBounds(15,105,150,60);
+            chb3.setBounds(15,205,150,60);
+            chb4.setBounds(15,305,150,60);
+
           // create a panel 
           JPanel p = new JPanel(); 
   
           // add label to panel 
-          p.add(Jl); 
-          p.add(chb1); 
-          p.add(chb2); 
-          p.add(chb3); 
-          p.add(chb4); 
+          frame.add(Jl); 
+          frame.add(chb1); 
+          frame.add(chb2); 
+          frame.add(chb3); 
+          frame.add(chb4); 
 // add panel to frame   
           frame.add(p);           
           // adds button in JFrame 
